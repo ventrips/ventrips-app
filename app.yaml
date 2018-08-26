@@ -17,8 +17,8 @@ env: flex
 env_variables:
   API_KEY: YOUR_API_KEY
 
-manual_scaling:
-  instances: 1
+# manual_scaling:
+#   instances: 1
 
 automatic_scaling:
  min_num_instances: 1
