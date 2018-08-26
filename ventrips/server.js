@@ -29,16 +29,14 @@ if (process.env.GCLOUD_PROJECT) {
 var path = require('path');
 var express = require('express');
 var bodyParser = require('body-parser');
-var google = require('googleapis');
-var youtube = google.youtube('v3');
 
 var app = express();
 
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'dist')));
 
 app.use('*', function (req, res) {
-  return res.sendFile(path.join(__dirname, 'public/index.html'));
+  return res.sendFile(path.join(__dirname, 'dist/index.html'));
 });
 
 // Basic error logger/handler
@@ -52,7 +50,7 @@ if (process.env.NODE_ENV === 'production') {
 
 if (module === require.main) {
   // Start the server
-  var server = app.listen(process.env.port || 4200, function () {
+  var server = app.listen(process.env.port || 8080, function () {
     var port = server.address().port;
 
     console.log('App listening on port %s', port);
