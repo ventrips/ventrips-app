@@ -27,6 +27,12 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 # ventrips
+Visual Studio Code
+1. Install ESLint
+2. Install TSLint
+3. Install GitLens
+
+Local
 1. sudo npm install -g npm
 2. sudo npm install -g @angular/cli
 3. clone ventrips-app repo
@@ -34,13 +40,11 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 5. sudo npm install
 6. ng serve --open
 
-Visual Studio Code
-1. Install ESLint
-2. Install TSLint
-3. Install GitLens
+Google Cloud SDK
+1. https://cloud.google.com/sdk/
 
 Deploy
-1. Open Google Cloud Shell or visit: https://console.cloud.google.com/cloudshell/editor?project=ventrips-214422&shellonly=true&fromcloudshell=true
+1. Use Google Cloud SDK on terminal (if installed), Open Google Cloud Shell on browser, or directly visit: https://console.cloud.google.com/cloudshell/editor?project=ventrips-214422&shellonly=true&fromcloudshell=true
 2. Pull the latest repo
 3. ng build --prod
 4. [Optional to test web preview of latest changes] node server.js
