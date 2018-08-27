@@ -5,7 +5,7 @@ export const environment = {
     authDomain: 'ventrips-214422.firebaseapp.com',
     databaseURL: 'https://ventrips-214422.firebaseio.com',
     projectId: 'ventrips-214422',
-    storageBucket: 'ventrips-214422appspot.com',
+    storageBucket: 'ventrips-214422.appspot.com',
     messagingSenderId: '637747621465'
   }
 };
