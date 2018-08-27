@@ -6,6 +6,6 @@ export const environment = {
     databaseURL: 'https://ventrips-214422.firebaseio.com',
     projectId: 'ventrips-214422',
     storageBucket: 'ventrips-214422appspot.com',
-    messagingSenderId: 'ZZZZZZZZZZZZ'
+    messagingSenderId: '637747621465'
   }
 };
