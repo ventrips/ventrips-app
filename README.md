@@ -45,3 +45,5 @@ Deploy
 3. ng build --prod
 4. [Optional to test web preview of latest changes] node server.js
 5. gcloud app deploy
+
+Note: Changes deployment changes should be reflected after clearing cache or waiting awhile
