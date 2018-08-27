@@ -55,7 +55,49 @@ if (module === require.main) {
 
     console.log('App listening on port %s', port);
     console.log('Press Ctrl+C to quit.');
+
+    postDocument();
+    // updateDocument();
+
   });
 }
 
 module.exports = app;
+
+// Create new document
+function postDocument() {
+  const Firestore = require('@google-cloud/firestore');
+  const firestore = new Firestore({
+    projectId: 'ventrips-214422',
+    keyFilename: './../ventrips-3b3b1b08237d.json',
+  });
+  const settings = { timestampsInSnapshots: true};
+  firestore.settings(settings);
+  const collection = firestore.collection('items');
+    collection.add({
+      title: 'Welcome to Firestore 5 Random',
+      description: 'Hello World',
+      category: 'Awesome',
+      date: 'Nov 20'
+    }).then(() => {
+      // Document created successfully.
+    });
+};
+
+// Update an existing document.
+function updateDocument() {
+  const Firestore = require('@google-cloud/firestore');
+  const firestore = new Firestore({
+    projectId: 'ventrips-214422',
+    keyFilename: './../ventrips-3b3b1b08237d.json',
+  });
+  const settings = { timestampsInSnapshots: true};
+  firestore.settings(settings);
+
+  const document = firestore.doc('items/PTQEG3gGwXXm4mgs0Z3Z')
+  document.update({
+    title: 'Welcome to Firestore 12 Update',
+  }).then(() => {
+    // Document updated successfully.
+  });
+};

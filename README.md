@@ -42,6 +42,10 @@ Local
 
 Google Cloud SDK
 1. https://cloud.google.com/sdk/
+2. Be sure to have app-credentials from https://console.cloud.google.com/apis/credentials?project=ventrips-214422&folder&organizationId
+2. export GOOGLE_APPLICATION_CREDENTIALS="/Users/NAME/Desktop/ventrips-3b3b1b08237d.json"
+
+
 
 Deploy
 1. Use Google Cloud SDK on terminal (if installed), Open Google Cloud Shell on browser, or directly visit: https://console.cloud.google.com/cloudshell/editor?project=ventrips-214422&shellonly=true&fromcloudshell=true

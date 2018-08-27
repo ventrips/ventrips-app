@@ -31,6 +31,7 @@
     "@angular/language-service": "^6.1.0",
     "@fortawesome/fontawesome-free": "^5.2.0",
     "@google-cloud/debug-agent": "^2.6.0",
+    "@google-cloud/firestore": "^0.16.1",
     "@google-cloud/storage": "^1.7.0",
     "@google/cloud-errors": "^0.1.2",
     "@google/cloud-trace": "^0.6.3",
