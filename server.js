@@ -7,7 +7,7 @@
  *    http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * publicributed under the License is publicributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -33,10 +33,10 @@ var bodyParser = require('body-parser');
 var app = express();
 
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'src')));
 
 app.use('*', function (req, res) {
-  return res.sendFile(path.join(__dirname, 'public/index.html'));
+  return res.sendFile(path.join(__dirname, 'src/index.html'));
 });
 
 // Basic error logger/handler
