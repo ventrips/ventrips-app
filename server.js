@@ -33,10 +33,10 @@ var bodyParser = require('body-parser');
 var app = express();
 
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, 'src')));
+app.use(express.static(path.join(__dirname, 'dist')));
 
 app.use('*', function (req, res) {
-  return res.sendFile(path.join(__dirname, 'src/index.html'));
+  return res.sendFile(path.join(__dirname, 'dist/index.html'));
 });
 
 // Basic error logger/handler
