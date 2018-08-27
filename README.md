@@ -38,3 +38,10 @@ Visual Studio Code
 1. Install ESLint
 2. Install TSLint
 3. Install GitLens
+
+Deploy
+1. Open Google Cloud Shell or visit: https://console.cloud.google.com/cloudshell/editor?project=ventrips-214422&shellonly=true&fromcloudshell=true
+2. Pull the latest repo
+3. ng build --prod
+4. [Optional to test web preview of latest changes] node server.js
+5. gcloud app deploy
