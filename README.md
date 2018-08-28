@@ -55,3 +55,8 @@ Deploy
 5. gcloud app deploy
 
 Note: Changes deployment changes should be reflected after clearing cache or waiting awhile
+
+Firebase Hosting Deploy
+
+1. sudo npm install -g firebase-tools
+2. firebase deploy
