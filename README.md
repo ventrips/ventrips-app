@@ -59,4 +59,6 @@ Note: Changes deployment changes should be reflected after clearing cache or wai
 Firebase Hosting Deploy
 
 1. sudo npm install -g firebase-tools
-2. firebase deploy
+2. cd ventrips-app and npm install
+3. cd functions and npm install
+4. firebase deploy
