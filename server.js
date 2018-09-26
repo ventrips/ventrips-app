@@ -69,7 +69,7 @@ function postDocument() {
   const Firestore = require('@google-cloud/firestore');
   const firestore = new Firestore({
     projectId: 'ventrips-214422',
-    keyFilename: './../ventrips-3b3b1b08237d.json',
+    keyFilename: './../ventrips-214422-firebase-adminsdk-w9d9x-fa4567e61b.json',
   });
   const settings = { timestampsInSnapshots: true};
   firestore.settings(settings);
@@ -89,7 +89,7 @@ function updateDocument() {
   const Firestore = require('@google-cloud/firestore');
   const firestore = new Firestore({
     projectId: 'ventrips-214422',
-    keyFilename: './../ventrips-3b3b1b08237d.json',
+    keyFilename: './../ventrips-214422-firebase-adminsdk-w9d9x-fa4567e61b.json',
   });
   const settings = { timestampsInSnapshots: true};
   firestore.settings(settings);
